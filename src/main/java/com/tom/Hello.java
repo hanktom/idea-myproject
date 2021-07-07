@@ -1,5 +1,7 @@
 package com.tom;
 
+import java.util.Random;
+
 public class Hello {
     public static void main(String[] args) { //main
         System.out.println("Hello"); //sout
@@ -49,5 +51,27 @@ public class Hello {
         String s2 = "Thanks!";
 //        String s2 = new String("Thanks!");
         System.out.println(s1);
+        Random r = new Random();
+        System.out.println(r.nextInt());
+        System.out.println(s1.length());
+        System.out.println(s1.charAt(2));
+        System.out.println(s1.toUpperCase());
+        System.out.println(s1); //immutable
+        int n = 0;
+        while(n <= 5) {
+            System.out.println("Hello1");
+            n++;
+//            break;
+        }
+        for(int i = 0 ; i < 3; i++) {
+            System.out.println("Hello2");
+        }
+        System.out.println("End");
+        String s3 = "abcdefg";
+        //一個字元一行，全印出
+
+        for (int i = 0; i < 7; i++) {
+            System.out.println(s3.charAt(i));
+        }
     }
 }
