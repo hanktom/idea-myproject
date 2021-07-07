@@ -35,5 +35,19 @@ public class Hello {
         int m = 5;
         System.out.println(m<3 || m>8);
         //System.out.println(m>=3 & m<=8);
+        String s = "abc";  //char0,char1,char2
+//        char[] cc = new char[3];
+        char[] cc = {'a','b','c'};
+        System.out.println(cc[0]);
+        System.out.println(cc[2]);
+        System.out.println(cc[1]);
+//        int sum = m1 + m2 + m3 + m4 + m5
+        int[] data = new int[50];
+        //字串
+        String hello = "Hello";
+        String s1 = new String(cc);
+        String s2 = "Thanks!";
+//        String s2 = new String("Thanks!");
+        System.out.println(s1);
     }
 }
