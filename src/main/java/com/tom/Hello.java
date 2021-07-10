@@ -67,11 +67,30 @@ public class Hello {
             System.out.println("Hello2");
         }
         System.out.println("End");
-        String s3 = "abcdefg";
+        String s3 = "abcdefgh";
         //一個字元一行，全印出
-
-        for (int i = 0; i < 7; i++) {
-            System.out.println(s3.charAt(i));
+        System.out.println("length:" + s3.length());
+        if (s3.length() <= 5) {
+            for (int i = 0; i < s3.length(); i++) {
+                System.out.println(s3.charAt(i));
+            }
+        } else {
+            System.out.println("Cannot print big string");
         }
+        System.out.println(s3.toUpperCase());
+        char lower = 'a';
+        char upper = 'A';
+//        upper++;
+        System.out.println((int)lower);
+        System.out.println(upper);
+        for (int i=0; i<s3.length(); i++) {
+            if (i%2 == 0) {
+                System.out.print((char)(s3.charAt(i) - 32));
+            } else {
+                System.out.print(s3.charAt(i));
+            }
+        }
+        System.out.println();
+        System.out.println("end");
     }
 }
