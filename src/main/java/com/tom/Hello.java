@@ -83,14 +83,23 @@ public class Hello {
 //        upper++;
         System.out.println((int)lower);
         System.out.println(upper);
+        System.out.println(String.valueOf(lower) + "*");
+
         for (int i=0; i<s3.length(); i++) {
+            String single;
+            char c = s3.charAt(i);
             if (i%2 == 0) {
-                System.out.print((char)(s3.charAt(i) - 32));
+                single = String.valueOf(c).toUpperCase();
             } else {
-                System.out.print(s3.charAt(i));
+                single = String.valueOf(c);
             }
+            System.out.print(single);
         }
         System.out.println();
         System.out.println("end");
+        //String內容不能改變
+        String name = "Hank";
+        name = name + "son";
+        System.out.println(name);
     }
 }
