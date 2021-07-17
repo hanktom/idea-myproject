@@ -15,8 +15,27 @@ public class Student {
     }
 
     public String getGrading() {
-        int average = getAverage();
         String grading = "F";
+        switch (getAverage()/10) {
+            case 10:
+            case 9:
+                grading = "A";
+                break;
+            case 8:
+                grading = "B";
+                break;
+            case 7:
+                grading = "C";
+                break;
+            case 6:
+                grading = "D";
+                break;
+            default:
+                grading = "F";
+                break;
+        }
+
+        /*int average = getAverage();
         if (average >= 90) {
             grading = "A";
         } else if (average >= 80) {
@@ -25,7 +44,7 @@ public class Student {
             grading = "C";
         } else if (average >= 60) {
             grading = "D";
-        }
+        }*/
         return grading;
     }
 
